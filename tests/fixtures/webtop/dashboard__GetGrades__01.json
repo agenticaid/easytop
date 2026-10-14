@@ -1,0 +1,21 @@
+{
+  "endpoint": "dashboard/GetGrades",
+  "method": "POST",
+  "request": {
+    "id": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007006",
+    "ClassCode": 1
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "allowToViewThis": true,
+      "dataTable": []
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

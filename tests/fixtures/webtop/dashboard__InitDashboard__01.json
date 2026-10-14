@@ -1,0 +1,49 @@
+{
+  "endpoint": "dashboard/InitDashboard",
+  "method": "POST",
+  "request": {},
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "childrens": [
+        {
+          "id": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007006",
+          "firstName": "Noa",
+          "lastName": "Levi",
+          "classCode": 1,
+          "classNum": 2,
+          "cellphone": null
+        },
+        {
+          "id": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007007",
+          "firstName": "Ido",
+          "lastName": "Levi",
+          "classCode": 1,
+          "classNum": 1,
+          "cellphone": null
+        },
+        {
+          "id": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007008",
+          "firstName": "Maya",
+          "lastName": "Levi",
+          "classCode": 5,
+          "classNum": 1,
+          "cellphone": "050-000-0001"
+        }
+      ],
+      "allowShotefSchedualeDataForToday": false,
+      "allowChangesAndMessagesDataForToday": false,
+      "allowGetHomeWork": true,
+      "allowGetPupilDiciplineEvents": true,
+      "allowGetGrades": true,
+      "isOrt": false,
+      "shortcuts": []
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

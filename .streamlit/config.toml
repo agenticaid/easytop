@@ -1,0 +1,3 @@
+# The analytics page (tools/dashboard) runs on the developer's Mac only. No usage statistics go to Streamlit.
+[browser]
+gatherUsageStats = false

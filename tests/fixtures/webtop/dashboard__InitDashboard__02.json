@@ -1,0 +1,24 @@
+{
+  "endpoint": "dashboard/InitDashboard",
+  "method": "POST",
+  "request": {},
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "childrens": null,
+      "allowShotefSchedualeDataForToday": true,
+      "allowChangesAndMessagesDataForToday": true,
+      "allowGetHomeWork": false,
+      "allowGetPupilDiciplineEvents": false,
+      "allowGetGrades": false,
+      "isOrt": false,
+      "shortcuts": []
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

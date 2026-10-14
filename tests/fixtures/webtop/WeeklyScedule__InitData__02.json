@@ -1,0 +1,136 @@
+{
+  "endpoint": "WeeklyScedule/InitData",
+  "method": "POST",
+  "request": {
+    "InstitutionCode": 107003,
+    "SelectedDate": "2026-09-30T21:40:04.428Z",
+    "View": "weekly",
+    "spaceId": 0,
+    "language": "he",
+    "item": "",
+    "ClassNum": null,
+    "ClassCode": null,
+    "ChildId": null,
+    "year": 2027
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "message": null,
+      "data": {
+        "linkedClasses": null,
+        "types": null,
+        "colors": null,
+        "hourSettings": {
+          "schdualerHourNumber": 9,
+          "schdualerStartZero": 0
+        },
+        "classes": [
+          {
+            "classCode": 1,
+            "classNumber": 2,
+            "title": null,
+            "className": null,
+            "childName": "Dana Levi",
+            "childId": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007006"
+          },
+          {
+            "classCode": 1,
+            "classNumber": 1,
+            "title": null,
+            "className": null,
+            "childName": "Amit Levi",
+            "childId": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007007"
+          },
+          {
+            "classCode": 5,
+            "classNumber": 1,
+            "title": null,
+            "className": null,
+            "childName": "Roni Levi",
+            "childId": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007008"
+          }
+        ],
+        "isSchoolyAdministrator": false,
+        "canAddEvents": false,
+        "studyGroups": null,
+        "forms": null,
+        "events": {
+          "hours": [
+            {
+              "hour": 0,
+              "name": null,
+              "fromTime": ":",
+              "toTime": ":"
+            },
+            {
+              "hour": 1,
+              "name": null,
+              "fromTime": ":",
+              "toTime": ":"
+            },
+            {
+              "hour": 2,
+              "name": null,
+              "fromTime": ":",
+              "toTime": ":"
+            },
+            {
+              "hour": 3,
+              "name": null,
+              "fromTime": ":",
+              "toTime": ":"
+            },
+            {
+              "hour": 4,
+              "name": null,
+              "fromTime": ":",
+              "toTime": ":"
+            },
+            {
+              "hour": 5,
+              "name": null,
+              "fromTime": ":",
+              "toTime": ":"
+            },
+            {
+              "hour": 6,
+              "name": null,
+              "fromTime": ":",
+              "toTime": ":"
+            },
+            {
+              "hour": 7,
+              "name": null,
+              "fromTime": ":",
+              "toTime": ":"
+            }
+          ],
+          "vactionns": [
+            {
+              "startDate": "2026-09-25T00:00:00",
+              "endDate": "2026-10-03T00:00:00",
+              "startHour": null,
+              "endHour": null,
+              "name": "חג סוכות"
+            }
+          ],
+          "startDate": "2026-09-27T00:00:00",
+          "minHour": 0,
+          "maxHour": 0,
+          "events": null
+        },
+        "inactiveDays": [
+          7
+        ]
+      },
+      "messageObjects": null
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

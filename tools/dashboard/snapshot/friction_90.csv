@@ -1,0 +1,12 @@
+part,week,active_families,reconnects,route,state,logins,median_hours,max_hours
+lifetime,,,,ministry,ended,19,297.0,399.0
+lifetime,,,,ministry,alive,5,115.0,240.0
+lifetime,,,,password,ended,2,8.0,8.3
+weekly,2026-08-16,3,1,,,,,
+weekly,2026-08-23,4,3,,,,,
+weekly,2026-08-30,5,0,,,,,
+weekly,2026-09-06,5,3,,,,,
+weekly,2026-09-13,5,2,,,,,
+weekly,2026-09-20,5,3,,,,,
+weekly,2026-09-27,5,2,,,,,
+weekly,2026-10-04,5,4,,,,,

@@ -1,0 +1,6 @@
+# SHA-256 of every image or video in docs/media that Erez reviewed by eye and called clean.
+# One line per file: "<sha256>  <file name>". Add a line only after Erez says "clean" for that exact file.
+00246faaeb8ca5a530dc7d9c8b1aefb40ebfe6aaec30e25ba009f706c69cc373  dashboard.png
+0918e94a6256f0e6794e2275024d71d9de75769f3e8b61f82ae8c2e10e0b491f  hero.gif
+c7af93f8fbbac0b00ec231caad46848056ce4967d916bc7962478fdd4db241c3  exams.png
+42a60804fd8b5d608363d3a33fefc7c4ec9c08f30d0bbd2b2498c1f24da4cfda  read-only.png

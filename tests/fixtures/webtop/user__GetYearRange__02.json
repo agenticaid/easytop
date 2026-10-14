@@ -1,0 +1,18 @@
+{
+  "endpoint": "user/GetYearRange",
+  "method": "POST",
+  "request": 2027,
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "minDate": "2026-09-01T00:00:00",
+      "maxDate": "2027-06-30T00:00:00"
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

@@ -1,0 +1,107 @@
+{
+  "endpoint": "dashboard/GetHomeWork",
+  "method": "POST",
+  "request": {
+    "id": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007008",
+    "ClassCode": 5,
+    "ClassNumber": 1
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "allowToViewThis": true,
+      "dataTable": [
+        {
+          "lesson": "אנגלית",
+          "level": null,
+          "teacher": "Omer Levi",
+          "hourName": "",
+          "hourNum": "1",
+          "status": "noDataYet",
+          "homeworkData": null,
+          "lessonSubject": null,
+          "cancelReason": null,
+          "studyGroupId": 17015,
+          "division_id": null,
+          "attachedFiles": []
+        },
+        {
+          "lesson": "מדעים",
+          "level": null,
+          "teacher": "Tamar Levi",
+          "hourName": "",
+          "hourNum": "2",
+          "status": "noDataYet",
+          "homeworkData": null,
+          "lessonSubject": null,
+          "cancelReason": null,
+          "studyGroupId": 17016,
+          "division_id": null,
+          "attachedFiles": []
+        },
+        {
+          "lesson": "מתמטיקה",
+          "level": null,
+          "teacher": "Yoav Levi",
+          "hourName": "",
+          "hourNum": "3",
+          "status": "noDataYet",
+          "homeworkData": null,
+          "lessonSubject": null,
+          "cancelReason": null,
+          "studyGroupId": 17017,
+          "division_id": null,
+          "attachedFiles": []
+        },
+        {
+          "lesson": "קוד פלוס",
+          "level": null,
+          "teacher": "Shira Levi",
+          "hourName": "",
+          "hourNum": "4",
+          "status": "noDataYet",
+          "homeworkData": null,
+          "lessonSubject": null,
+          "cancelReason": null,
+          "studyGroupId": 17018,
+          "division_id": null,
+          "attachedFiles": []
+        },
+        {
+          "lesson": "דיבור בציבור",
+          "level": null,
+          "teacher": "Eitan Levi",
+          "hourName": "",
+          "hourNum": "5",
+          "status": "noDataYet",
+          "homeworkData": null,
+          "lessonSubject": null,
+          "cancelReason": null,
+          "studyGroupId": 17019,
+          "division_id": null,
+          "attachedFiles": []
+        },
+        {
+          "lesson": "זה``ב",
+          "level": null,
+          "teacher": "Lior Levi",
+          "hourName": "",
+          "hourNum": "6",
+          "status": "noDataYet",
+          "homeworkData": null,
+          "lessonSubject": null,
+          "cancelReason": null,
+          "studyGroupId": 17020,
+          "division_id": null,
+          "attachedFiles": []
+        }
+      ]
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

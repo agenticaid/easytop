@@ -1,0 +1,596 @@
+{
+  "endpoint": "PupilCard/GetPupilScheduale",
+  "method": "POST",
+  "request": {
+    "weekIndex": 0,
+    "viewType": 0,
+    "studyYear": 2025,
+    "studyYearName": "תשפ״ה",
+    "studentID": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007008",
+    "studentName": "Roni Levi",
+    "classCode": 5,
+    "periodID": 9023,
+    "periodName": "מחצית א",
+    "moduleID": 10
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": [
+      {
+        "dayIndex": 1,
+        "hoursData": [
+          {
+            "hour": 0,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 1,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 1,
+                "hour": 1,
+                "subject": "אנגלית",
+                "subjectLevel": null,
+                "teacherLastName": "Mizrahi",
+                "teacherPrivateName": "Michal",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 2,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 1,
+                "hour": 2,
+                "subject": "מתמטיקה",
+                "subjectLevel": null,
+                "teacherLastName": "Peretz",
+                "teacherPrivateName": "Yoav",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 3,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 1,
+                "hour": 3,
+                "subject": "מתמטיקה",
+                "subjectLevel": null,
+                "teacherLastName": "Peretz",
+                "teacherPrivateName": "Yoav",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 4,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 1,
+                "hour": 4,
+                "subject": "פלתורה",
+                "subjectLevel": null,
+                "teacherLastName": "Mizrahi",
+                "teacherPrivateName": "Omer",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 5,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 1,
+                "hour": 5,
+                "subject": "עברית",
+                "subjectLevel": null,
+                "teacherLastName": "Golan",
+                "teacherPrivateName": "Roni",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 6,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 1,
+                "hour": 6,
+                "subject": "עברית",
+                "subjectLevel": null,
+                "teacherLastName": "Golan",
+                "teacherPrivateName": "Roni",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 7,
+            "hourName": null,
+            "scheduale": []
+          }
+        ]
+      },
+      {
+        "dayIndex": 2,
+        "hoursData": [
+          {
+            "hour": 0,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 1,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 2,
+                "hour": 1,
+                "subject": "מתמטיקה",
+                "subjectLevel": null,
+                "teacherLastName": "Peretz",
+                "teacherPrivateName": "Yoav",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 2,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 2,
+                "hour": 2,
+                "subject": "אסטרטגיות שפה",
+                "subjectLevel": null,
+                "teacherLastName": "Peretz",
+                "teacherPrivateName": "Tamar",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 3,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 2,
+                "hour": 3,
+                "subject": "עברית",
+                "subjectLevel": null,
+                "teacherLastName": "Golan",
+                "teacherPrivateName": "Roni",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 4,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 2,
+                "hour": 4,
+                "subject": "עברית",
+                "subjectLevel": null,
+                "teacherLastName": "Golan",
+                "teacherPrivateName": "Roni",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 5,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 2,
+                "hour": 5,
+                "subject": "אמנות",
+                "subjectLevel": "",
+                "teacherLastName": "Dahan",
+                "teacherPrivateName": "Tal",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 6,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 2,
+                "hour": 6,
+                "subject": "חינוך-גופני",
+                "subjectLevel": null,
+                "teacherLastName": "Katz",
+                "teacherPrivateName": "Yoav",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 7,
+            "hourName": null,
+            "scheduale": []
+          }
+        ]
+      },
+      {
+        "dayIndex": 3,
+        "hoursData": [
+          {
+            "hour": 0,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 1,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 3,
+                "hour": 1,
+                "subject": "עברית",
+                "subjectLevel": null,
+                "teacherLastName": "Golan",
+                "teacherPrivateName": "Roni",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 2,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 3,
+                "hour": 2,
+                "subject": "מדעים",
+                "subjectLevel": null,
+                "teacherLastName": "Peretz",
+                "teacherPrivateName": "Yoav",
+                "room": null
+              },
+              {
+                "day": 3,
+                "hour": 2,
+                "subject": "מדעים",
+                "subjectLevel": null,
+                "teacherLastName": "Dahan",
+                "teacherPrivateName": "Shira",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 3,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 3,
+                "hour": 3,
+                "subject": "מתמטיקה",
+                "subjectLevel": null,
+                "teacherLastName": "Peretz",
+                "teacherPrivateName": "Yoav",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 4,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 3,
+                "hour": 4,
+                "subject": "תנ``ך",
+                "subjectLevel": null,
+                "teacherLastName": "Peretz",
+                "teacherPrivateName": "Tamar",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 5,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 3,
+                "hour": 5,
+                "subject": "עברית",
+                "subjectLevel": null,
+                "teacherLastName": "Golan",
+                "teacherPrivateName": "Roni",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 6,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 7,
+            "hourName": null,
+            "scheduale": []
+          }
+        ]
+      },
+      {
+        "dayIndex": 4,
+        "hoursData": [
+          {
+            "hour": 0,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 1,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 4,
+                "hour": 1,
+                "subject": "עברית",
+                "subjectLevel": null,
+                "teacherLastName": "Golan",
+                "teacherPrivateName": "Roni",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 2,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 4,
+                "hour": 2,
+                "subject": "חינוך-גופני",
+                "subjectLevel": null,
+                "teacherLastName": "Katz",
+                "teacherPrivateName": "Yoav",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 3,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 4,
+                "hour": 3,
+                "subject": "מוסיקה",
+                "subjectLevel": null,
+                "teacherLastName": "Biton",
+                "teacherPrivateName": "Ido",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 4,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 4,
+                "hour": 4,
+                "subject": "מולדת",
+                "subjectLevel": null,
+                "teacherLastName": "Golan",
+                "teacherPrivateName": "Roni",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 5,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 4,
+                "hour": 5,
+                "subject": "אנגלית",
+                "subjectLevel": null,
+                "teacherLastName": "Mizrahi",
+                "teacherPrivateName": "Michal",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 6,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 7,
+            "hourName": null,
+            "scheduale": []
+          }
+        ]
+      },
+      {
+        "dayIndex": 5,
+        "hoursData": [
+          {
+            "hour": 0,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 1,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 5,
+                "hour": 1,
+                "subject": "מתמטיקה",
+                "subjectLevel": null,
+                "teacherLastName": "Peretz",
+                "teacherPrivateName": "Yoav",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 2,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 5,
+                "hour": 2,
+                "subject": "כישורי חיים",
+                "subjectLevel": null,
+                "teacherLastName": "Peretz",
+                "teacherPrivateName": "Yoav",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 3,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 4,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 5,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 5,
+                "hour": 5,
+                "subject": "ספורט אתגרי",
+                "subjectLevel": "",
+                "teacherLastName": "Friedman",
+                "teacherPrivateName": "Gal",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 6,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 7,
+            "hourName": null,
+            "scheduale": []
+          }
+        ]
+      },
+      {
+        "dayIndex": 6,
+        "hoursData": [
+          {
+            "hour": 0,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 1,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 6,
+                "hour": 1,
+                "subject": "מתמטיקה",
+                "subjectLevel": null,
+                "teacherLastName": "Peretz",
+                "teacherPrivateName": "Yoav",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 2,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 6,
+                "hour": 2,
+                "subject": "מתמטיקה",
+                "subjectLevel": null,
+                "teacherLastName": "Peretz",
+                "teacherPrivateName": "Yoav",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 3,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 6,
+                "hour": 3,
+                "subject": "מדעים",
+                "subjectLevel": null,
+                "teacherLastName": "Peretz",
+                "teacherPrivateName": "Yoav",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 4,
+            "hourName": null,
+            "scheduale": [
+              {
+                "day": 6,
+                "hour": 4,
+                "subject": "מפתח הל``ב",
+                "subjectLevel": null,
+                "teacherLastName": "Peretz",
+                "teacherPrivateName": "Yoav",
+                "room": null
+              }
+            ]
+          },
+          {
+            "hour": 5,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 6,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 7,
+            "hourName": null,
+            "scheduale": []
+          }
+        ]
+      }
+    ],
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

@@ -1,0 +1,52 @@
+{
+  "endpoint": "user/ChangeUser",
+  "method": "POST",
+  "request": {
+    "StudentId": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007005",
+    "institutionCode": null,
+    "userType": null
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "studentId": 0,
+      "id": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007005",
+      "userId": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007009",
+      "schoolName": "School 2",
+      "isSuperAdmin": false,
+      "isAllowDataImport": false,
+      "mustChangePassword": "<redacted>",
+      "userType": 2,
+      "userImageToken": "<redacted>",
+      "fullLog": false,
+      "firstName": "Omer",
+      "lastName": "Levi",
+      "isTeacher": 2,
+      "isWebTopUser": true,
+      "schoolId": 9011,
+      "studentEmail": "user1@example.test",
+      "studentGender": false,
+      "firstInstitutionCode": 107003,
+      "institutionCode": 107003,
+      "isReseted": false,
+      "lastResetDate": "2026-01-01T00:00:00",
+      "lastPasswordChangeDate": "<redacted>",
+      "lastLoginDate": "2026-01-01T00:00:00",
+      "classCode": "0",
+      "classNumber": 0,
+      "isSchoolyAdministrator": false,
+      "token": "<redacted>",
+      "cellphone": "050-000-0002",
+      "browserLanguage": null,
+      "initialUserType": 2,
+      "fullName": "Noa Levi",
+      "isOrt": false
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

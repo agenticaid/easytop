@@ -1,0 +1,795 @@
+{
+  "endpoint": "PupilCard/GetPupilLessonsAndHomework",
+  "method": "POST",
+  "request": {
+    "weekIndex": 0,
+    "viewType": 0,
+    "studyYear": 2027,
+    "studyYearName": "תשפ״ז",
+    "studentID": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007006",
+    "studentName": "Dana Levi",
+    "classCode": 1,
+    "periodID": 9023,
+    "periodName": "מחצית א",
+    "moduleID": 11
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": [
+      {
+        "date": "2026-09-27T00:00:00+03:00",
+        "dayIndex": 1,
+        "hoursData": [
+          {
+            "hour": 0,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 1,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "חשבון",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 1,
+                "hour_no": 1,
+                "hour_name": null,
+                "study_group": 17011,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 2,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "עברית",
+                "subject_level": "",
+                "teacher": "Ido Mizrahi",
+                "day_no": 1,
+                "hour_no": 2,
+                "hour_name": null,
+                "study_group": 17097,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 3,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "עברית",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 1,
+                "hour_no": 3,
+                "hour_name": null,
+                "study_group": 17012,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 4,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "עברית",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 1,
+                "hour_no": 4,
+                "hour_name": null,
+                "study_group": 17012,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 5,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "עברית",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 1,
+                "hour_no": 5,
+                "hour_name": null,
+                "study_group": 17012,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 6,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 7,
+            "hourName": null,
+            "scheduale": []
+          }
+        ]
+      },
+      {
+        "date": "2026-09-28T00:00:00+03:00",
+        "dayIndex": 2,
+        "hoursData": [
+          {
+            "hour": 0,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 1,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "חינוך-גופני",
+                "subject_level": "",
+                "teacher": "Maya Mizrahi",
+                "day_no": 2,
+                "hour_no": 1,
+                "hour_name": null,
+                "study_group": 17098,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 2,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "חשבון",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 2,
+                "hour_no": 2,
+                "hour_name": null,
+                "study_group": 17011,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 3,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "חשבון",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 2,
+                "hour_no": 3,
+                "hour_name": null,
+                "study_group": 17011,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 4,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "עברית",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 2,
+                "hour_no": 4,
+                "hour_name": null,
+                "study_group": 17012,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 5,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "עברית",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 2,
+                "hour_no": 5,
+                "hour_name": null,
+                "study_group": 17012,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 6,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 7,
+            "hourName": null,
+            "scheduale": []
+          }
+        ]
+      },
+      {
+        "date": "2026-09-29T00:00:00+03:00",
+        "dayIndex": 3,
+        "hoursData": [
+          {
+            "hour": 0,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 1,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "עברית",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 3,
+                "hour_no": 1,
+                "hour_name": null,
+                "study_group": 17012,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 2,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "עברית",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 3,
+                "hour_no": 2,
+                "hour_name": null,
+                "study_group": 17012,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 3,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "חשבון",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 3,
+                "hour_no": 3,
+                "hour_name": null,
+                "study_group": 17011,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 4,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "חשבון",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 3,
+                "hour_no": 4,
+                "hour_name": null,
+                "study_group": 17011,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 5,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "כישורי חיים",
+                "subject_level": null,
+                "teacher": "Omer Mizrahi",
+                "day_no": 3,
+                "hour_no": 5,
+                "hour_name": null,
+                "study_group": 17099,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 6,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 7,
+            "hourName": null,
+            "scheduale": []
+          }
+        ]
+      },
+      {
+        "date": "2026-09-30T00:00:00+03:00",
+        "dayIndex": 4,
+        "hoursData": [
+          {
+            "hour": 0,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 1,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "זה``ב",
+                "subject_level": "",
+                "teacher": "Lior Levi",
+                "day_no": 4,
+                "hour_no": 1,
+                "hour_name": null,
+                "study_group": 17100,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 2,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "חינוך-גופני",
+                "subject_level": "",
+                "teacher": "Tamar Mizrahi",
+                "day_no": 4,
+                "hour_no": 2,
+                "hour_name": null,
+                "study_group": 17101,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 3,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "מוסיקה",
+                "subject_level": null,
+                "teacher": "Yoav Mizrahi",
+                "day_no": 4,
+                "hour_no": 3,
+                "hour_name": null,
+                "study_group": 17102,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 4,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "טכנו לגו",
+                "subject_level": "",
+                "teacher": "Shira Mizrahi",
+                "day_no": 4,
+                "hour_no": 4,
+                "hour_name": null,
+                "study_group": 17103,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 5,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "קריאה ויצירה",
+                "subject_level": "",
+                "teacher": "Ido Mizrahi",
+                "day_no": 4,
+                "hour_no": 5,
+                "hour_name": null,
+                "study_group": 17104,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 6,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 7,
+            "hourName": null,
+            "scheduale": []
+          }
+        ]
+      },
+      {
+        "date": "2026-10-01T00:00:00+03:00",
+        "dayIndex": 5,
+        "hoursData": [
+          {
+            "hour": 0,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 1,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "חשבון",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 5,
+                "hour_no": 1,
+                "hour_name": null,
+                "study_group": 17011,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 2,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "עברית",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 5,
+                "hour_no": 2,
+                "hour_name": null,
+                "study_group": 17012,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 3,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "מפתח הל``ב",
+                "subject_level": null,
+                "teacher": "Ido Levi",
+                "day_no": 5,
+                "hour_no": 3,
+                "hour_name": null,
+                "study_group": 17013,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 4,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "חשבון",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 5,
+                "hour_no": 4,
+                "hour_name": null,
+                "study_group": 17011,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 5,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "אמנות",
+                "subject_level": "",
+                "teacher": "Maya Levi",
+                "day_no": 5,
+                "hour_no": 5,
+                "hour_name": null,
+                "study_group": 17014,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              },
+              {
+                "files": [],
+                "subject_name": "עברית",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 5,
+                "hour_no": 5,
+                "hour_name": null,
+                "study_group": 17012,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 6,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 7,
+            "hourName": null,
+            "scheduale": []
+          }
+        ]
+      },
+      {
+        "date": "2026-10-02T00:00:00+03:00",
+        "dayIndex": 6,
+        "hoursData": [
+          {
+            "hour": 0,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 1,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 2,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "עברית",
+                "subject_level": "",
+                "teacher": "Ido Levi",
+                "day_no": 6,
+                "hour_no": 2,
+                "hour_name": null,
+                "study_group": 17012,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 3,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "חינוך-גופני",
+                "subject_level": "",
+                "teacher": "Maya Mizrahi",
+                "day_no": 6,
+                "hour_no": 3,
+                "hour_name": null,
+                "study_group": 17098,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 4,
+            "hourName": null,
+            "scheduale": [
+              {
+                "files": [],
+                "subject_name": "אמנות",
+                "subject_level": "",
+                "teacher": "Maya Levi",
+                "day_no": 6,
+                "hour_no": 4,
+                "hour_name": null,
+                "study_group": 17014,
+                "descClass": null,
+                "homeWork": null,
+                "statClass": 0,
+                "file_name": null,
+                "file_name2": null,
+                "file_name3": null
+              }
+            ]
+          },
+          {
+            "hour": 5,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 6,
+            "hourName": null,
+            "scheduale": []
+          },
+          {
+            "hour": 7,
+            "hourName": null,
+            "scheduale": []
+          }
+        ]
+      }
+    ],
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

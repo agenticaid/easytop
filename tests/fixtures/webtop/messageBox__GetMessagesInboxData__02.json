@@ -1,0 +1,126 @@
+{
+  "endpoint": "messageBox/GetMessagesInboxData",
+  "method": "POST",
+  "request": {
+    "MessageId": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007111",
+    "FilterId": 0,
+    "IsInbox": true,
+    "hasRead": null
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "messageData": {
+        "isSystemMessage": false,
+        "userImageToken": "<redacted>",
+        "typeID": 1,
+        "subject": "Synthetic text 96",
+        "messageContent": "Synthetic text 97",
+        "institutionCode": 107003,
+        "sendingDate": "2026-08-31T09:43:00",
+        "attachedFile": "Synthetic text 98",
+        "attachedFile2": "Synthetic text 99",
+        "attachedFile3": "Synthetic text 100",
+        "attachedFile4": "Synthetic text 101",
+        "attachedFile5": "Synthetic text 102",
+        "isVisible": true,
+        "signedOn": null,
+        "signingClasses": null,
+        "filesWereAttached": 1,
+        "hiddenRecipients": 1,
+        "isMunicipal": null,
+        "privateName": "Dana",
+        "lastName": "Biton",
+        "userType": 1,
+        "recipientsName": "Synthetic text 103",
+        "fromTitle": null,
+        "totalRecipientsCount": 18,
+        "replyDisabled": true,
+        "filesList": [
+          {
+            "id": 0,
+            "fileName": "Synthetic text 98",
+            "fileKey": "Synthetic text 104",
+            "fileUrl": "Synthetic text 105",
+            "fileExtantion": ".pdf",
+            "fileSize": {
+              "size": 433.0439453125,
+              "sizeType": 2,
+              "sizeName": "KB"
+            }
+          },
+          {
+            "id": 0,
+            "fileName": "Synthetic text 99",
+            "fileKey": "Synthetic text 106",
+            "fileUrl": "Synthetic text 107",
+            "fileExtantion": ".pdf",
+            "fileSize": {
+              "size": 1.7399559020996094,
+              "sizeType": 1,
+              "sizeName": "MB"
+            }
+          },
+          {
+            "id": 0,
+            "fileName": "Synthetic text 100",
+            "fileKey": "Synthetic text 108",
+            "fileUrl": "Synthetic text 109",
+            "fileExtantion": ".pdf",
+            "fileSize": {
+              "size": 887.501953125,
+              "sizeType": 2,
+              "sizeName": "KB"
+            }
+          },
+          {
+            "id": 0,
+            "fileName": "Synthetic text 101",
+            "fileKey": "Synthetic text 110",
+            "fileUrl": "Synthetic text 111",
+            "fileExtantion": ".pdf",
+            "fileSize": {
+              "size": 351.7822265625,
+              "sizeType": 2,
+              "sizeName": "KB"
+            }
+          },
+          {
+            "id": 0,
+            "fileName": "Synthetic text 102",
+            "fileKey": "Synthetic text 112",
+            "fileUrl": "Synthetic text 113",
+            "fileExtantion": ".pdf",
+            "fileSize": {
+              "size": 173.73828125,
+              "sizeType": 2,
+              "sizeName": "KB"
+            }
+          }
+        ],
+        "parentAllowSign": null,
+        "parentAllowSignDate": null,
+        "messageAlertId": null,
+        "routeData": null,
+        "fileName": null,
+        "routePage": null,
+        "senderId": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007112"
+      },
+      "messagesCount": 0,
+      "buttons": [
+        "forward",
+        "delete"
+      ],
+      "signature": null,
+      "survey": null,
+      "roles": "Synthetic text 21",
+      "childrens": null
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

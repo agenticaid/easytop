@@ -1,0 +1,28 @@
+{
+  "endpoint": "dashboard/ChangesAndMessagesDataForToday",
+  "method": "POST",
+  "request": {
+    "institutionCode": 107003,
+    "selectedValue": "5|1|10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007008",
+    "typeView": 1,
+    "todayOnly": true,
+    "studentId": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007008",
+    "ClassCode": 5
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "messages": [],
+      "events": [],
+      "changes": [],
+      "exams": [],
+      "allowToViewThis": false
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

@@ -1,0 +1,17 @@
+{
+  "endpoint": "messageBox/GetMessageFolders",
+  "method": "POST",
+  "request": {
+    "Id": "17029"
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": [],
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

@@ -1,0 +1,20 @@
+{
+  "endpoint": "shotef/GetViewPermissions",
+  "method": "POST",
+  "request": 107003,
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "changesAndExamsTab": false,
+      "timeTable": false,
+      "testsAndEvents": false,
+      "schoolChanges": false
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

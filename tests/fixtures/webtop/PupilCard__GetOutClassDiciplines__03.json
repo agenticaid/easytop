@@ -1,0 +1,31 @@
+{
+  "endpoint": "PupilCard/GetOutClassDiciplines",
+  "method": "POST",
+  "request": {
+    "weekIndex": 0,
+    "viewType": 0,
+    "studyYear": 2027,
+    "studyYearName": "תשפ״ז",
+    "studentID": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007008",
+    "studentName": "Roni Levi",
+    "classCode": 5,
+    "periodID": 9023,
+    "periodName": "מחצית א",
+    "moduleID": 5
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "behaviorGrade": null,
+      "studentshipGrade": null,
+      "allowDelete": false,
+      "events": []
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

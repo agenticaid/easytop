@@ -1,0 +1,19 @@
+{
+  "endpoint": "PupilCard/GetPreviousHomeworks",
+  "method": "POST",
+  "request": {
+    "studyYear": 2027,
+    "studyGroup": 17013,
+    "studentID": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007006"
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": [],
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

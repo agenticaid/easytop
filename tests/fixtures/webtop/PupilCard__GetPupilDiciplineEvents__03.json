@@ -1,0 +1,65 @@
+{
+  "endpoint": "PupilCard/GetPupilDiciplineEvents",
+  "method": "POST",
+  "request": {
+    "weekIndex": 0,
+    "viewType": 0,
+    "studyYear": 2027,
+    "studyYearName": "תשפ״ז",
+    "studentID": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007006",
+    "studentName": "Dana Levi",
+    "classCode": 1,
+    "periodID": 9023,
+    "periodName": "מחצית א",
+    "moduleID": 4
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "viewRemarkForParentPupil": true,
+      "canRequestJustification": false,
+      "behaviorGrade": null,
+      "studentshipGrade": null,
+      "canDelete": false,
+      "hours": null,
+      "eventsTypes": null,
+      "diciplineEvents": [
+        {
+          "eventID": 1007021,
+          "eventType": "אי הבאת ציוד",
+          "eventCode": 781203,
+          "eventDate": "2026-09-17T00:00:00",
+          "allowJustification": false,
+          "enableJustified": true,
+          "isJustified": false,
+          "isRequestJustification": false,
+          "justifiedReason": null,
+          "justificationStatus": false,
+          "justificationID": 0,
+          "notJustified": true,
+          "subjectName": "עברית",
+          "subjectCode": 39,
+          "subjectLevel": "",
+          "teacherName": "Ido Levi",
+          "hourNum": 2,
+          "hourName": "",
+          "remark": null,
+          "justifiedRemark": "",
+          "studyGroupID": 17012,
+          "periodId": 9023,
+          "eventTypeId": 0,
+          "lessonNums": 8,
+          "autoJustifyInEvents": false,
+          "idType": 0
+        }
+      ],
+      "groups": null
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

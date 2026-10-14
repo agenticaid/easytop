@@ -1,0 +1,15 @@
+{
+  "endpoint": "dashboard/CheckToken",
+  "method": "POST",
+  "request": {},
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": true,
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

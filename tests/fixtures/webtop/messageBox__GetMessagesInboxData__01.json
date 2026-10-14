@@ -1,0 +1,79 @@
+{
+  "endpoint": "messageBox/GetMessagesInboxData",
+  "method": "POST",
+  "request": {
+    "MessageId": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007033",
+    "FilterId": 0,
+    "IsInbox": true,
+    "hasRead": null
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "messageData": {
+        "isSystemMessage": false,
+        "userImageToken": "<redacted>",
+        "typeID": 1,
+        "subject": "Synthetic text 2",
+        "messageContent": "Synthetic text 11",
+        "institutionCode": 107003,
+        "sendingDate": "2026-09-11T11:41:00",
+        "attachedFile": "Synthetic text 12",
+        "attachedFile2": null,
+        "attachedFile3": null,
+        "attachedFile4": null,
+        "attachedFile5": null,
+        "isVisible": true,
+        "signedOn": null,
+        "signingClasses": null,
+        "filesWereAttached": 1,
+        "hiddenRecipients": 0,
+        "isMunicipal": null,
+        "privateName": "Yoav",
+        "lastName": "Peretz",
+        "userType": 1,
+        "recipientsName": "Synthetic text 13",
+        "fromTitle": null,
+        "totalRecipientsCount": 3,
+        "replyDisabled": false,
+        "filesList": [
+          {
+            "id": 0,
+            "fileName": "Synthetic text 12",
+            "fileKey": "Synthetic text 14",
+            "fileUrl": "Synthetic text 15",
+            "fileExtantion": ".jpeg",
+            "fileSize": {
+              "size": 354.8974609375,
+              "sizeType": 2,
+              "sizeName": "KB"
+            }
+          }
+        ],
+        "parentAllowSign": null,
+        "parentAllowSignDate": null,
+        "messageAlertId": null,
+        "routeData": null,
+        "fileName": null,
+        "routePage": null,
+        "senderId": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007032"
+      },
+      "messagesCount": 0,
+      "buttons": [
+        "forward",
+        "reply",
+        "delete"
+      ],
+      "signature": null,
+      "survey": null,
+      "roles": "Synthetic text 16",
+      "childrens": null
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

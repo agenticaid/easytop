@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="he" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Webtop</title>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; overscroll-behavior: none; position: fixed; inset: 0; width: 100%; }
+  #bar { position: fixed; top: 0; left: 0; right: 0; height: 48px; z-index: 5; display: flex; gap: 6px; padding: 6px;
+         box-sizing: border-box; background: #fff; border-bottom: 1px solid #d0d5dd; direction: rtl; }
+  #bar button { flex: 1; border: 1px solid #c3cad4; border-radius: 8px; background: #f6f8fb; color: #1b3a5c;
+                font: 600 14px system-ui, sans-serif; padding: 0 4px; }
+  #bar button.on { background: #1b3a5c; color: #fff; border-color: #1b3a5c; }
+  #vaultbtn { flex: 0 0 40px; display: flex; align-items: center; justify-content: center; border: 1px solid #c3cad4;
+              border-radius: 8px; background: #f6f8fb; font-size: 18px; }
+  #vaultbtn[hidden] { display: none; }
+  #screen { display: block; touch-action: none; user-select: none; -webkit-user-select: none; background: #fff; }
+  #msg { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center;
+         font: 18px/1.4 system-ui, sans-serif; color: #fff; background: rgba(0,0,0,.72); padding: 24px; }
+  #msg[hidden] { display: none; }
+  /* Off-screen text field: focusing it raises the phone keyboard; what is typed is forwarded to the server. */
+  #kbbtn { position: fixed; right: 12px; bottom: 12px; z-index: 6; width: 52px; height: 52px; border-radius: 26px; border: 0;
+           background: #1b3a5c; color: #fff; font-size: 24px; box-shadow: 0 2px 8px rgba(0,0,0,.35); }
+  #kbbtn[hidden] { display: none; }
+  /* Saved details (kept on this phone only): chips that type one detail into the focused remote field. */
+  #chips { position: fixed; left: 8px; right: 72px; bottom: 12px; z-index: 6; display: flex; gap: 6px; align-items: center;
+           direction: rtl; }
+  #chips[hidden] { display: none; }
+  #chips button { height: 40px; min-width: 40px; border: 0; border-radius: 20px; padding: 0 14px; background: #1b3a5c;
+                  color: #fff; font: 600 14px system-ui, sans-serif; box-shadow: 0 2px 8px rgba(0,0,0,.35); }
+  #chiplist { display: flex; gap: 6px; overflow-x: auto; }
+  #vault { position: fixed; inset: 0; z-index: 9; background: #fff; color: #1b3a5c; direction: rtl; overflow-y: auto;
+           box-sizing: border-box; padding: 18px 16px; font: 16px/1.45 system-ui, sans-serif; }
+  #vault[hidden] { display: none; }
+  #vault h2 { margin: 0 0 8px; font-size: 20px; }
+  #vault p { margin: 0 0 8px; font-size: 14px; color: #44546a; }
+  #vault label { display: block; margin: 12px 0 4px; font-weight: 600; }
+  #vault input { width: 100%; box-sizing: border-box; font-size: 16px; padding: 10px; border: 1px solid #c3cad4;
+                 border-radius: 8px; direction: ltr; text-align: right; }
+  #vault .row { display: flex; gap: 8px; margin-top: 18px; }
+  #vault .row button { flex: 1; height: 44px; border-radius: 8px; border: 1px solid #c3cad4; background: #f6f8fb;
+                       color: #1b3a5c; font: 600 15px system-ui, sans-serif; }
+  #vault .row button.primary { background: #1b3a5c; color: #fff; border-color: #1b3a5c; }
+  #vault_note { margin-top: 10px; font-size: 14px; color: #b42318; min-height: 1em; }
+  #kb { position: fixed; left: 0; top: 0; width: 1px; height: 1px; opacity: 0; font-size: 16px; border: 0; padding: 0; }
+</style>
+</head>
+<body>
+<div id="bar">
+  <button data-r="ministry" class="on">משרד החינוך</button>
+  <button data-r="code">קוד בהודעה</button>
+  <button data-r="password">סיסמה</button>
+  <span id="vaultbtn" role="button" aria-label="saved details" hidden>🔒</span>
+</div>
+<canvas id="screen"></canvas>
+<input id="kb" type="text" enterkeyhint="go" autocomplete="one-time-code" autocapitalize="off" autocorrect="off" spellcheck="false" aria-hidden="true" tabindex="-1">
+<button id="kbbtn" type="button" hidden aria-label="keyboard">⌨</button>
+<div id="chips" hidden><span id="chiplist"></span></div>
+<div id="vault" hidden>
+  <h2>פרטים שמורים בטלפון הזה</h2>
+  <p>הפרטים נשמרים רק בטלפון שלך, באחסון המאובטח של טלגרם. הם לא נשלחים אלינו ולא נשמרים אצלנו: רק כשלוחצים על כפתור, הפרט מוקלד בשדה שבחרתם. את בדיקת "אני לא רובוט" תמיד פותרים בעצמכם.</p>
+  <p>Saved on this phone only, in Telegram's secure storage. They never reach our server except as typing when you tap a button. You always solve the "I'm not a robot" check yourself.</p>
+  <label>ת״ז / ID number <input data-k="id" inputmode="numeric" autocomplete="off"></label>
+  <label>טלפון / Mobile number <input data-k="phone" inputmode="tel" autocomplete="off"></label>
+  <label>משתמש משרד החינוך / Ministry username <input data-k="user" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"></label>
+  <label>סיסמה / Password <input data-k="pass" type="password" autocomplete="off"></label>
+  <div class="row"><button id="vault_save" type="button" class="primary">שמירה</button><button id="vault_forget" type="button">מחיקת הכול</button><button id="vault_close" type="button">סגירה</button></div>
+  <div id="vault_note"></div>
+</div>
+<div id="msg">Connecting…</div>
+<script>
+(() => {
+  const tg = window.Telegram && window.Telegram.WebApp;
+  if (tg) {
+    tg.ready(); tg.expand();
+    if (tg.disableVerticalSwipes) tg.disableVerticalSwipes();
+    try { if (tg.lockOrientation) tg.lockOrientation(); } catch (e) {}  // a rotated phone collapses the picture
+  }
+  const token = new URLSearchParams(location.search).get('t') || '';
+  const canvas = document.getElementById('screen'), ctx = canvas.getContext('2d');
+  const kb = document.getElementById('kb'), kbbtn = document.getElementById('kbbtn'), msgBox = document.getElementById('msg');
+  // The remote browser is sized once, to the stable viewport, and never resized (real Chrome cannot be resized
+  // reliably). When the keyboard opens, the picture is slid up instead so the field being typed in stays visible.
+  const BAR = 48;  // the sign-in options bar above the picture
+  // The remote screen has one fixed size for every phone (the server's CANON_W x CANON_H), so a page can be
+  // prepared before anyone connects. The picture is scaled to fit this phone, keeping its shape; taps are
+  // fractions of the picture, so the scale never matters to the server.
+  const CW = 392, CH = 687;
+  const VIS0 = Math.round((tg && tg.viewportStableHeight) || window.innerHeight) - BAR;  // visible height, keyboard closed
+  const SCALE = Math.min(Math.round(window.innerWidth) / CW, VIS0 / CH);
+  const W = Math.round(CW * SCALE), H = Math.round(CH * SCALE);
+  canvas.style.width = W + 'px'; canvas.style.height = H + 'px'; canvas.style.margin = BAR + 'px auto 0';
+
+  const say = (t) => { msgBox.textContent = t; msgBox.hidden = !t; };
+  const ws = new WebSocket((location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host +
+                           '/ws?t=' + encodeURIComponent(token) +
+                           '&d=' + encodeURIComponent((tg && tg.initData) || ''));  // signed proof of who opened this
+  ws.binaryType = 'arraybuffer';
+  const send = (o) => { if (ws.readyState === 1) ws.send(JSON.stringify(o)); };
+
+  let sized = false, drawing = false, pending = null;
+  async function draw(buf) {
+    if (drawing) { pending = buf; return; }          // keep only the newest frame while one is decoding
+    drawing = true;
+    try {
+      const bmp = await createImageBitmap(new Blob([buf], { type: 'image/jpeg' }));
+      if (!sized || canvas.width !== bmp.width || canvas.height !== bmp.height) {
+        canvas.width = bmp.width; canvas.height = bmp.height; sized = true; say('');
+      }
+      ctx.drawImage(bmp, 0, 0, canvas.width, canvas.height);
+      bmp.close();
+    } finally { drawing = false; }
+    if (pending) { const b = pending; pending = null; draw(b); }
+  }
+
+  let chipsFor = () => {};  // set when secure storage exists: shows the saved-detail chips while a remote field is focused
+  let tapN = 0, prev = '', fields = null, editableOn = false;  // fields: where the remote text fields are (fractions); null until known
+  const IOS = /iP(hone|ad|od)/.test(navigator.userAgent);
+  // The keyboard button is the sure way in: shown when the remote page is on a text field but the keyboard is not
+  // actually open (the screen has not shrunk after a moment), whatever the hidden field's focus state says: on a
+  // real Android phone the field showed as focused for 15 s without any keyboard.
+  let kbTimer = null;
+  function updateKbBtn() {
+    clearTimeout(kbTimer);
+    if (!editableOn || keyboardOpen()) { kbbtn.hidden = true; return; }
+    kbTimer = setTimeout(() => { kbbtn.hidden = !(editableOn && !keyboardOpen()); }, 600);
+  }
+  // Release and refocus: a phone ignores focus() on a field that already counts as focused. On Android the release
+  // asks the keyboard to hide a moment later than an immediate focus asks it to show, so refocus a beat later; the
+  // tap's activation lasts for seconds. iOS needs focus() inside the tap itself.
+  function openKeyboard() {
+    const was = document.activeElement === kb;
+    kb.blur(); resetKb();
+    if (was && !IOS) setTimeout(() => kb.focus({ preventScroll: true }), 60);
+    else kb.focus({ preventScroll: true });
+  }
+  kbbtn.addEventListener('click', () => { kbbtn.hidden = true; openKeyboard(); updateKbBtn(); });
+  kb.addEventListener('blur', updateKbBtn);
+  const MARK = '\u200b';  // zero-width space: the deletable marker (see the typing comment below)
+  const resetKb = () => { kb.value = MARK; prev = MARK; kb.setSelectionRange(1, 1); };
+  resetKb();
+  ws.onmessage = (ev) => {
+    if (typeof ev.data !== 'string') { draw(ev.data); return; }
+    const m = JSON.parse(ev.data);
+    if (m.t === 'pong') send({ t: 'lat', ms: Math.round(performance.now() - m.c) });
+    else if (m.t === 'fields') { fields = m.r; }
+    else if (m.t === 'editable') {
+      editableOn = !!m.on; fieldBottom = m.bottom || 0; chipsFor(editableOn);
+      // Focusing here would be outside the tap, which a phone ignores: if the keyboard is not already open the
+      // keyboard button is the sure way in.
+      if (m.on) { reveal(); } else { kb.blur(); resetKb(); panY = 0; applyPan(); }
+      updateKbBtn();
+    }
+    else if (m.t === 'done') { say('✓ מחובר / Connected'); setTimeout(() => tg && tg.close(), 1200); }
+    else if (m.t === 'busy') say('Another login is in progress. Try again in a minute.');
+    else if (m.t === 'error') say(m.why === 'timeout' ? 'Timed out. Close and try again.' : 'Something went wrong. Close and try again.');
+  };
+  ws.onclose = () => { if (msgBox.hidden) say('Disconnected. Close and open again.'); };
+  ws.onerror = () => say('Cannot reach the server.');
+  setInterval(() => send({ t: 'ping', c: performance.now() }), 4000);
+
+  // Numbers only (sizes, zoom, scroll): logged on the server so a calibration problem can be traced.
+  function diag() {
+    const vv = window.visualViewport, r = canvas.getBoundingClientRect();
+    send({ t: 'diag', v: {
+      innerW: window.innerWidth, innerH: window.innerHeight, cssH: H, boxW: Math.round(r.width), boxH: Math.round(r.height),
+      boxTop: Math.round(r.top), frameW: canvas.width, frameH: canvas.height, dpr: window.devicePixelRatio,
+      vvW: vv ? Math.round(vv.width) : 0, vvH: vv ? Math.round(vv.height) : 0, vvTop: vv ? Math.round(vv.offsetTop) : 0,
+      vvScale: vv ? vv.scale : 0, panY: Math.round(panY), visH: vh, tgH: Math.round((tg && tg.viewportHeight) || 0), tgStable: Math.round((tg && tg.viewportStableHeight) || 0),
+    } });
+  }
+  setTimeout(diag, 2500);
+
+  // Keyboard open/close changes how much of the screen is visible. The picture slides up (panY) so the focused
+  // field stays above the keyboard; dragging slides it further while the keyboard is open.
+  let vh = VIS0, panY = 0, fieldBottom = 0, vpTimer = null;
+  const keyboardOpen = () => vh < VIS0 - 40;
+  function applyPan() {
+    const maxPan = Math.max(0, H - vh);
+    panY = Math.min(0, Math.max(-maxPan, panY));
+    canvas.style.transform = panY ? 'translateY(' + panY + 'px)' : '';
+  }
+  function reveal() {
+    if (editableOn && keyboardOpen()) { panY = Math.min(0, vh - 24 - fieldBottom * H); applyPan(); }
+  }
+  function onViewport() {
+    clearTimeout(vpTimer);
+    vpTimer = setTimeout(() => {
+      const h = Math.round((tg && tg.viewportHeight) || (window.visualViewport && window.visualViewport.height) || window.innerHeight) - BAR;
+      vh = h >= VIS0 - 40 ? VIS0 : h;
+      if (!keyboardOpen()) panY = 0;
+      applyPan(); reveal(); updateKbBtn();
+      setTimeout(diag, 800);
+    }, 150);
+  }
+  if (tg && tg.onEvent) tg.onEvent('viewportChanged', onViewport);
+  if (window.visualViewport) window.visualViewport.addEventListener('resize', onViewport);
+
+  // Which Webtop sign-in screen to show: the Ministry of Education login (where the server starts), the message code
+  // (also for a forgotten password) or the password. The parent can switch at any time.
+  document.querySelectorAll('#bar button').forEach((b) => b.addEventListener('click', () => {
+    document.querySelectorAll('#bar button').forEach((x) => x.classList.toggle('on', x === b));
+    kb.blur(); resetKb(); panY = 0; applyPan();
+    send({ t: 'route', to: b.dataset.r });
+  }));
+
+  // Touch: a short touch is a tap, a drag is a scroll.
+  let start = null, last = null, moved = false, lastSent = 0;
+  const pos = (t) => { const r = canvas.getBoundingClientRect(); return { x: t.clientX - r.left, y: t.clientY - r.top, cy: t.clientY }; };
+  canvas.addEventListener('touchstart', (e) => { start = last = pos(e.touches[0]); moved = false; }, { passive: true });
+  canvas.addEventListener('touchmove', (e) => {
+    e.preventDefault(); if (!start) return;
+    const p = pos(e.touches[0]);
+    if (!moved && Math.hypot(p.x - start.x, p.y - start.y) < 10) return;
+    moved = true;
+    if (keyboardOpen()) { panY += p.cy - last.cy; applyPan(); last = p; return; }  // slide the picture, not the page
+    const now = performance.now();
+    if (now - lastSent < 30) return;
+    lastSent = now;
+    const r = canvas.getBoundingClientRect();
+    send({ t: 'scroll', fdy: (last.y - p.y) / r.height, fx: p.x / r.width, fy: p.y / r.height });
+    last = p;
+  }, { passive: false });
+  // A tap is the browser's genuine click (the touch events are not cancelled, which would cancel the click too): a
+  // phone is surest to open the keyboard for a focus() made while handling a click. A drag makes no tap.
+  let lastWasDrag = false;
+  canvas.addEventListener('touchend', () => { lastWasDrag = moved; start = null; }, { passive: true });
+  canvas.addEventListener('click', (e) => {
+    if (lastWasDrag) { lastWasDrag = false; return; }
+    const r = canvas.getBoundingClientRect();
+    const fx = (e.clientX - r.left) / r.width, fy = (e.clientY - r.top) / r.height;
+    const onField = fields === null || fields.some(([x0, y0, x1, y1]) =>
+      fx >= x0 - 0.03 && fx <= x1 + 0.03 && fy >= y0 - 0.03 && fy <= y1 + 0.03);
+    if (onField) openKeyboard(); else { kb.blur(); resetKb(); }
+    tapN++;
+    send({ t: 'diag', v: { tapN, fxm: Math.round(fx * 1000), fym: Math.round(fy * 1000), onField: onField ? 1 : 0,
+                         nFields: fields ? fields.length : -1, kbOn: document.activeElement === kb ? 1 : 0 } });
+    updateKbBtn();
+    send({ t: 'tap', fx, fy });  // a fraction of the picture, never raw pixels
+  });
+
+  // Typing: diff the hidden field against what was already sent, so autocorrect, word composition and Hebrew
+  // keyboards all work. The field always starts with an invisible marker: a phone keyboard sends nothing for
+  // Backspace on an empty field, but it can delete the marker, and that deletion is a Backspace in the remote
+  // field (so text that was already there can be deleted too).
+  kb.addEventListener('input', () => {
+    let cur = kb.value;
+    if (!cur.startsWith(MARK)) {
+      send({ t: 'key', k: 'Backspace' });
+      cur = MARK + cur;
+      kb.value = cur;
+      kb.setSelectionRange(cur.length, cur.length);
+    }
+    const a = prev.slice(1), b = cur.slice(1);      // what was typed before / now, marker excluded
+    let i = 0;
+    while (i < a.length && i < b.length && a[i] === b[i]) i++;
+    for (let n = a.length - i; n > 0; n--) send({ t: 'key', k: 'Backspace' });
+    if (b.length > i) send({ t: 'text', s: b.slice(i) });
+    prev = cur;
+  });
+  kb.addEventListener('keydown', (e) => { if (e.key === 'Enter') { e.preventDefault(); send({ t: 'key', k: 'Enter' }); resetKb(); } });
+
+  // Saved details (Erez 2026-10-11): kept ONLY on this phone, in Telegram's secure storage (iOS Keychain / Android
+  // Keystore, Bot API 9.0). A chip types one saved detail into the remote field the parent has focused, through the
+  // same path as typing: the server forwards it and never logs or stores it. The captcha is never touched. Without
+  // secure storage (an older Telegram) none of this is shown.
+  const store = tg && tg.SecureStorage;
+  if (store && tg.isVersionAtLeast && tg.isVersionAtLeast('9.0')) {
+    const DETAILS = [['id', 'ת״ז'], ['phone', 'טלפון'], ['user', 'משתמש'], ['pass', 'סיסמה']];
+    const chips = document.getElementById('chips'), list = document.getElementById('chiplist');
+    const vault = document.getElementById('vault'), note = document.getElementById('vault_note');
+    const have = {};  // which details exist: only yes/no is kept in memory, a value is read when its chip is tapped
+    const render = () => {
+      list.textContent = '';
+      for (const [k, label] of DETAILS) {
+        if (!have[k]) continue;
+        const b = document.createElement('button');
+        b.type = 'button'; b.dataset.k = k; b.textContent = label;
+        list.appendChild(b);
+      }
+    };
+    const refresh = () => {
+      let left = DETAILS.length;
+      for (const [k] of DETAILS) store.getItem('ed_' + k, (err, val) => { have[k] = !err && !!val; if (--left === 0) render(); });
+    };
+    document.getElementById('vaultbtn').hidden = false;
+    chipsFor = (on) => { chips.hidden = !on; };
+    refresh();
+    // A tap on a chip must not take focus from the hidden keyboard field, or the phone keyboard would close. Stopping
+    // the press also stops the click on iOS WebKit, so the chip acts on the release (a scroll of the chips is a
+    // cancelled pointer and does not fill anything).
+    list.addEventListener('pointerdown', (e) => e.preventDefault());
+    list.addEventListener('mousedown', (e) => e.preventDefault());
+    list.addEventListener('pointerup', (e) => {
+      const b = e.target.closest('button');
+      if (!b) return;
+      store.getItem('ed_' + b.dataset.k, (err, val) => { if (!err && val) send({ t: 'text', s: val }); });
+    });
+    const inputs = () => Array.from(vault.querySelectorAll('input[data-k]'));
+    const closeVault = () => { inputs().forEach((i) => { i.value = ''; }); note.textContent = ''; vault.hidden = true; };
+    document.getElementById('vaultbtn').addEventListener('click', () => {
+      kb.blur(); resetKb();
+      inputs().forEach((i) => { i.placeholder = have[i.dataset.k] ? '•••••• (שמור / saved)' : ''; });
+      vault.hidden = false;
+    });
+    document.getElementById('vault_close').addEventListener('click', closeVault);
+    document.getElementById('vault_save').addEventListener('click', () => {
+      const todo = inputs().filter((i) => i.value);
+      if (!todo.length) { closeVault(); return; }
+      let left = todo.length, failed = false;
+      todo.forEach((i) => store.setItem('ed_' + i.dataset.k, i.value, (err, ok) => {
+        if (err || !ok) failed = true;
+        if (--left === 0) {
+          refresh();
+          if (failed) note.textContent = 'לא ניתן לשמור / Could not save';
+          else closeVault();
+        }
+      }));
+    });
+    document.getElementById('vault_forget').addEventListener('click', () => {
+      let left = DETAILS.length;
+      for (const [k] of DETAILS) store.removeItem('ed_' + k, () => { if (--left === 0) { refresh(); closeVault(); } });
+    });
+  }
+})();
+</script>
+</body>
+</html>

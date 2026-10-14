@@ -1,0 +1,107 @@
+{
+  "endpoint": "dashboard/GetHomeWork",
+  "method": "POST",
+  "request": {
+    "id": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007006",
+    "ClassCode": 1,
+    "ClassNumber": 2
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "allowToViewThis": true,
+      "dataTable": [
+        {
+          "lesson": "חשבון",
+          "level": "",
+          "teacher": "Ido Levi",
+          "hourName": "",
+          "hourNum": "1",
+          "status": "noDataYet",
+          "homeworkData": null,
+          "lessonSubject": null,
+          "cancelReason": null,
+          "studyGroupId": 17011,
+          "division_id": null,
+          "attachedFiles": []
+        },
+        {
+          "lesson": "עברית",
+          "level": "",
+          "teacher": "Ido Levi",
+          "hourName": "",
+          "hourNum": "2",
+          "status": "noDataYet",
+          "homeworkData": null,
+          "lessonSubject": null,
+          "cancelReason": null,
+          "studyGroupId": 17012,
+          "division_id": null,
+          "attachedFiles": []
+        },
+        {
+          "lesson": "מפתח הל``ב",
+          "level": null,
+          "teacher": "Ido Levi",
+          "hourName": "",
+          "hourNum": "3",
+          "status": "noDataYet",
+          "homeworkData": null,
+          "lessonSubject": null,
+          "cancelReason": null,
+          "studyGroupId": 17013,
+          "division_id": null,
+          "attachedFiles": []
+        },
+        {
+          "lesson": "חשבון",
+          "level": "",
+          "teacher": "Ido Levi",
+          "hourName": "",
+          "hourNum": "4",
+          "status": "noDataYet",
+          "homeworkData": null,
+          "lessonSubject": null,
+          "cancelReason": null,
+          "studyGroupId": 17011,
+          "division_id": null,
+          "attachedFiles": []
+        },
+        {
+          "lesson": "אמנות",
+          "level": "",
+          "teacher": "Maya Levi",
+          "hourName": "",
+          "hourNum": "5",
+          "status": "noDataYet",
+          "homeworkData": null,
+          "lessonSubject": null,
+          "cancelReason": null,
+          "studyGroupId": 17014,
+          "division_id": null,
+          "attachedFiles": []
+        },
+        {
+          "lesson": "עברית",
+          "level": "",
+          "teacher": "Ido Levi",
+          "hourName": "",
+          "hourNum": "5",
+          "status": "noDataYet",
+          "homeworkData": null,
+          "lessonSubject": null,
+          "cancelReason": null,
+          "studyGroupId": 17012,
+          "division_id": null,
+          "attachedFiles": []
+        }
+      ]
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

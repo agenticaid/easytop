@@ -1,0 +1,118 @@
+{
+  "endpoint": "PupilCard/GetSettingsList",
+  "method": "POST",
+  "request": {},
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "modulesList": [
+        {
+          "id": 4,
+          "title": "Synthetic text 64",
+          "universalTitle": "lessonEvents",
+          "isLinked": 4,
+          "classes": null
+        },
+        {
+          "id": 5,
+          "title": "Synthetic text 65",
+          "universalTitle": "eventsOutsideClass",
+          "isLinked": 5,
+          "classes": null
+        },
+        {
+          "id": 12,
+          "title": "Synthetic text 66",
+          "universalTitle": "educatorNotes",
+          "isLinked": 12,
+          "classes": null
+        },
+        {
+          "id": 10,
+          "title": "Synthetic text 67",
+          "universalTitle": "scheduale",
+          "isLinked": 10,
+          "classes": null
+        },
+        {
+          "id": 9,
+          "title": "Synthetic text 68",
+          "universalTitle": "evaluationComponent",
+          "isLinked": 9,
+          "classes": null
+        },
+        {
+          "id": 11,
+          "title": "Synthetic text 69",
+          "universalTitle": "lessonSubjectHomework",
+          "isLinked": 11,
+          "classes": null
+        },
+        {
+          "id": 6,
+          "title": "Synthetic text 70",
+          "universalTitle": "grades",
+          "isLinked": 6,
+          "classes": null
+        }
+      ],
+      "divisionsList": [
+        {
+          "division_id": 9023,
+          "division_name": "מחצית א",
+          "year_division": 1,
+          "from_date": "2026-09-01T00:00:00",
+          "to_date": "2027-02-02T00:00:00",
+          "isPublic": true,
+          "isCurrent": 1,
+          "viewOrder": 1
+        },
+        {
+          "division_id": 9087,
+          "division_name": "מחצית ב`",
+          "year_division": 2,
+          "from_date": "2027-02-03T00:00:00",
+          "to_date": "2027-06-30T00:00:00",
+          "isPublic": true,
+          "isCurrent": 0,
+          "viewOrder": 2
+        }
+      ],
+      "children": [
+        {
+          "id": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007006",
+          "firstName": "Noa",
+          "lastName": "Levi",
+          "classCode": 1,
+          "classNum": 2,
+          "cellphone": null
+        },
+        {
+          "id": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007007",
+          "firstName": "Ido",
+          "lastName": "Levi",
+          "classCode": 1,
+          "classNum": 1,
+          "cellphone": null
+        },
+        {
+          "id": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007008",
+          "firstName": "Maya",
+          "lastName": "Levi",
+          "classCode": 5,
+          "classNum": 1,
+          "cellphone": "050-000-0001"
+        }
+      ],
+      "isParent": true,
+      "numBackYearsAllowed": 8,
+      "currentStudyYear": 2027
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

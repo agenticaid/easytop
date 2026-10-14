@@ -1,0 +1,10 @@
+{
+  "note": "SYNTHETIC dev data (made-up families), aggregates only",
+  "generated_at": "2026-10-11T13:53:29+00:00",
+  "period_end": "2026-10-10",
+  "periods": [
+    7,
+    28,
+    90
+  ]
+}

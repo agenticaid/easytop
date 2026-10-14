@@ -1,0 +1,30 @@
+# Secrets and live Webtop data — never commit
+webtop_cookies.json
+Memory.md
+.env
+.env.*
+!.env.example
+
+# Brainstorm mockups
+.superpowers/
+
+# Local Claude Code settings
+.claude/settings.local.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# macOS
+.DS_Store
+
+# Spike recordings (real data)
+spike_data/
+
+# Bot runtime logs
+logs/
+
+# Synthetic analytics output (regenerate with tools/analytics/synthetic.py)
+synthetic_events.ndjson

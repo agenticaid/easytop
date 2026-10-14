@@ -1,0 +1,369 @@
+{
+  "_note": "SYNTHETIC data, made-up names and schools. Not the Webtop response shape; it is our normalized shape. day offsets: school_days = Nth school day after 'today' (1 = next school day); sent_days_ago = calendar days.",
+  "kids": [
+    {
+      "id": "k1",
+      "name": "Noa",
+      "class_name": "ג׳2",
+      "school": {
+        "id": "s1",
+        "name": "Oranim Elementary (synthetic)"
+      },
+      "grade": 3
+    },
+    {
+      "id": "k2",
+      "name": "Ido",
+      "class_name": "ו׳1",
+      "school": {
+        "id": "s2",
+        "name": "Hadar School (synthetic)"
+      },
+      "grade": 6
+    }
+  ],
+  "timetable": {
+    "k1": {
+      "sun": [
+        {
+          "period": 1,
+          "start": "08:00",
+          "end": "08:45",
+          "subject": "Math",
+          "teacher": "Ms. Shir",
+          "room": "12"
+        },
+        {
+          "period": 2,
+          "start": "08:50",
+          "end": "09:35",
+          "subject": "Hebrew",
+          "teacher": "Ms. Shir",
+          "room": "12"
+        },
+        {
+          "period": 3,
+          "start": "10:00",
+          "end": "10:45",
+          "subject": "Physical Education",
+          "teacher": "Mr. Dan",
+          "room": "Gym"
+        },
+        {
+          "period": 4,
+          "start": "11:00",
+          "end": "11:45",
+          "subject": "English",
+          "teacher": "Ms. Rina",
+          "room": "7"
+        },
+        {
+          "period": 5,
+          "start": "12:00",
+          "end": "12:45",
+          "subject": "Art",
+          "teacher": "Ms. Lea",
+          "room": "Art"
+        }
+      ],
+      "mon": [
+        {
+          "period": 1,
+          "start": "08:00",
+          "end": "08:45",
+          "subject": "Science",
+          "teacher": "Mr. Omri",
+          "room": "Lab"
+        },
+        {
+          "period": 2,
+          "start": "08:50",
+          "end": "09:35",
+          "subject": "Math",
+          "teacher": "Ms. Shir",
+          "room": "12"
+        },
+        {
+          "period": 3,
+          "start": "10:00",
+          "end": "10:45",
+          "subject": "Hebrew",
+          "teacher": "Ms. Shir",
+          "room": "12"
+        }
+      ],
+      "tue": [
+        {
+          "period": 1,
+          "start": "08:00",
+          "end": "08:45",
+          "subject": "Math",
+          "teacher": "Ms. Shir",
+          "room": "12"
+        },
+        {
+          "period": 2,
+          "start": "08:50",
+          "end": "09:35",
+          "subject": "Physical Education",
+          "teacher": "Mr. Dan",
+          "room": "Gym"
+        },
+        {
+          "period": 3,
+          "start": "10:00",
+          "end": "10:45",
+          "subject": "Hebrew",
+          "teacher": "Ms. Shir",
+          "room": "12"
+        },
+        {
+          "period": 4,
+          "start": "11:00",
+          "end": "11:45",
+          "subject": "English",
+          "teacher": "Ms. Rina",
+          "room": "7"
+        },
+        {
+          "period": 5,
+          "start": "12:00",
+          "end": "12:45",
+          "subject": "English",
+          "teacher": "Ms. Rina",
+          "room": "7"
+        }
+      ],
+      "wed": [
+        {
+          "period": 1,
+          "start": "08:00",
+          "end": "08:45",
+          "subject": "Science",
+          "teacher": "Mr. Omri",
+          "room": "Lab"
+        },
+        {
+          "period": 2,
+          "start": "08:50",
+          "end": "09:35",
+          "subject": "Math",
+          "teacher": "Ms. Shir",
+          "room": "12"
+        }
+      ],
+      "thu": [
+        {
+          "period": 1,
+          "start": "08:00",
+          "end": "08:45",
+          "subject": "Hebrew",
+          "teacher": "Ms. Shir",
+          "room": "12"
+        },
+        {
+          "period": 2,
+          "start": "08:50",
+          "end": "09:35",
+          "subject": "Art",
+          "teacher": "Ms. Lea",
+          "room": "Art"
+        }
+      ]
+    },
+    "k2": {
+      "sun": [
+        {
+          "period": 1,
+          "start": "08:15",
+          "end": "09:00",
+          "subject": "Science",
+          "teacher": "Mr. Amir",
+          "room": "Lab 2"
+        },
+        {
+          "period": 2,
+          "start": "09:05",
+          "end": "09:50",
+          "subject": "History",
+          "teacher": "Ms. Yael",
+          "room": "21"
+        },
+        {
+          "period": 3,
+          "start": "10:10",
+          "end": "10:55",
+          "subject": "Math",
+          "teacher": "Mr. Zion",
+          "room": "21"
+        }
+      ],
+      "mon": [
+        {
+          "period": 1,
+          "start": "08:15",
+          "end": "09:00",
+          "subject": "Math",
+          "teacher": "Mr. Zion",
+          "room": "21"
+        },
+        {
+          "period": 2,
+          "start": "09:05",
+          "end": "09:50",
+          "subject": "English",
+          "teacher": "Ms. Tali",
+          "room": "14"
+        }
+      ],
+      "tue": [
+        {
+          "period": 1,
+          "start": "08:15",
+          "end": "09:00",
+          "subject": "Science",
+          "teacher": "Mr. Amir",
+          "room": "Lab 2"
+        },
+        {
+          "period": 2,
+          "start": "09:05",
+          "end": "09:50",
+          "subject": "Physical Education",
+          "teacher": "Mr. Ben",
+          "room": "Gym"
+        },
+        {
+          "period": 3,
+          "start": "10:10",
+          "end": "10:55",
+          "subject": "History",
+          "teacher": "Ms. Yael",
+          "room": "21"
+        }
+      ],
+      "wed": [
+        {
+          "period": 1,
+          "start": "08:15",
+          "end": "09:00",
+          "subject": "English",
+          "teacher": "Ms. Tali",
+          "room": "14"
+        },
+        {
+          "period": 2,
+          "start": "09:05",
+          "end": "09:50",
+          "subject": "Math",
+          "teacher": "Mr. Zion",
+          "room": "21"
+        }
+      ],
+      "thu": [
+        {
+          "period": 1,
+          "start": "08:15",
+          "end": "09:00",
+          "subject": "Science",
+          "teacher": "Mr. Amir",
+          "room": "Lab 2"
+        },
+        {
+          "period": 2,
+          "start": "09:05",
+          "end": "09:50",
+          "subject": "History",
+          "teacher": "Ms. Yael",
+          "room": "21"
+        }
+      ]
+    }
+  },
+  "changes": [
+    {
+      "kid_id": "k1",
+      "school_days": 1,
+      "period": 5,
+      "status": "cancelled",
+      "note": "Teacher absent, class ends early"
+    },
+    {
+      "kid_id": "k2",
+      "school_days": 1,
+      "period": 2,
+      "status": "room_changed",
+      "room": "Lab 1",
+      "note": "Moved to Lab 1"
+    }
+  ],
+  "homework": [
+    {
+      "kid_id": "k1",
+      "subject": "Math",
+      "description": "Workbook page 42",
+      "due_school_days": 1,
+      "assigned_days_ago": 2
+    },
+    {
+      "kid_id": "k1",
+      "subject": "Hebrew",
+      "description": "Read chapter 3",
+      "due_school_days": 3,
+      "assigned_days_ago": 1
+    },
+    {
+      "kid_id": "k2",
+      "subject": "History",
+      "description": "Finish worksheet on ancient Egypt",
+      "due_school_days": 2,
+      "assigned_days_ago": 1
+    }
+  ],
+  "messages": [
+    {
+      "id": "m1",
+      "kid_id": "k2",
+      "sender": "Ms. Yael (homeroom)",
+      "subject": "Class trip form",
+      "body": "Please return the signed trip form tomorrow. Bring water and a hat.",
+      "sent_days_ago": 0,
+      "unread": true,
+      "has_attachments": true
+    },
+    {
+      "id": "m2",
+      "kid_id": "k1",
+      "sender": "School office",
+      "subject": "Parents evening",
+      "body": "Parents evening will be held next month. Details to follow.",
+      "sent_days_ago": 4,
+      "unread": false,
+      "has_attachments": false
+    }
+  ],
+  "exams": [
+    {
+      "kid_id": "k2",
+      "subject": "Science",
+      "school_days": 3,
+      "topic": "Forces and motion"
+    }
+  ],
+  "events": [
+    {
+      "kid_id": "k1",
+      "kind": "grade",
+      "days_ago": 5,
+      "title": "Math quiz: 92",
+      "detail": null
+    },
+    {
+      "kid_id": "k2",
+      "kind": "attendance",
+      "days_ago": 3,
+      "title": "Late arrival",
+      "detail": "08:40"
+    }
+  ]
+}

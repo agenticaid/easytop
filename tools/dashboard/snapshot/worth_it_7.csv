@@ -1,0 +1,5 @@
+part,periods_ago,period_start,period_end,questions,active_families,cost_per_family_month_usd,p95_seconds,failures,failure_share,no_data,no_data_share,nudges_sent,nudges_followed,week,outcome,outcome_questions
+outcomes,,,,,,,,,,,,,,2026-10-04,answered,27
+outcomes,,,,,,,,,,,,,,2026-10-04,answered_no_data,1
+tiles,0,2026-10-04,2026-10-10,28,5,0.4081,8.861,0,0.0,1,0.03571428571428571,21,4,,,
+tiles,1,2026-09-27,2026-10-03,30,5,0.4689,8.424,0,0.0,1,0.03333333333333333,24,6,,,

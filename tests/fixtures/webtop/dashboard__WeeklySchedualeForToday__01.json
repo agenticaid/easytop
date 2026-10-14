@@ -1,0 +1,111 @@
+{
+  "endpoint": "dashboard/WeeklySchedualeForToday",
+  "method": "POST",
+  "request": {
+    "InstitutionCode": 107000,
+    "SelectedDate": "2026-09-30T21:33:48.956Z",
+    "View": "daily",
+    "spaceId": 0,
+    "language": "he",
+    "item": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007002",
+    "ClassNum": null,
+    "ClassCode": null,
+    "ChildId": null,
+    "year": 2027
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "message": null,
+      "data": {
+        "linkedClasses": null,
+        "types": null,
+        "colors": null,
+        "hourSettings": {
+          "schdualerHourNumber": 17,
+          "schdualerStartZero": 0
+        },
+        "classes": null,
+        "isSchoolyAdministrator": false,
+        "canAddEvents": false,
+        "studyGroups": null,
+        "forms": null,
+        "events": {
+          "hours": [
+            {
+              "hour": 0,
+              "name": null,
+              "fromTime": ":",
+              "toTime": ":"
+            },
+            {
+              "hour": 1,
+              "name": "1       8:45 - 8:00",
+              "fromTime": "09:00",
+              "toTime": "10:00"
+            },
+            {
+              "hour": 2,
+              "name": "2       9:30 - 8:45",
+              "fromTime": "10:00",
+              "toTime": "11:00"
+            },
+            {
+              "hour": 3,
+              "name": "3       10:30 - 9:45",
+              "fromTime": "11:00",
+              "toTime": "12:00"
+            },
+            {
+              "hour": 4,
+              "name": "4       11:15 - 10:30",
+              "fromTime": "12:00",
+              "toTime": "13:00"
+            },
+            {
+              "hour": 5,
+              "name": "5       12:15 - 11:30",
+              "fromTime": "13:00",
+              "toTime": "14:00"
+            },
+            {
+              "hour": 6,
+              "name": "6       13:00 - 12:15",
+              "fromTime": "14:00",
+              "toTime": "15:00"
+            },
+            {
+              "hour": 7,
+              "name": "7       14:10 - 13:25",
+              "fromTime": "15:00",
+              "toTime": "16:00"
+            }
+          ],
+          "vactionns": [
+            {
+              "startDate": "2026-09-25T00:00:00",
+              "endDate": "2026-10-03T00:00:00",
+              "startHour": null,
+              "endHour": null,
+              "name": "חג סוכות"
+            }
+          ],
+          "startDate": "2026-10-01T00:00:00+03:00",
+          "minHour": 0,
+          "maxHour": 17,
+          "events": null
+        },
+        "inactiveDays": [
+          7
+        ]
+      },
+      "messageObjects": null
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

@@ -1,0 +1,15 @@
+{
+  "endpoint": "dashboard/GetLatestPopupForUser",
+  "method": "POST",
+  "request": {},
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": null,
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

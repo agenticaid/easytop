@@ -1,0 +1,11 @@
+part,periods_ago,period_start,period_end,questions,active_families,cost_per_family_month_usd,p95_seconds,failures,failure_share,no_data,no_data_share,nudges_sent,nudges_followed,week,outcome,outcome_questions
+outcomes,,,,,,,,,,,,,,2026-09-13,answered,39
+outcomes,,,,,,,,,,,,,,2026-09-13,answered_no_data,1
+outcomes,,,,,,,,,,,,,,2026-09-20,answered,24
+outcomes,,,,,,,,,,,,,,2026-09-20,answered_no_data,3
+outcomes,,,,,,,,,,,,,,2026-09-27,answered,29
+outcomes,,,,,,,,,,,,,,2026-09-27,answered_no_data,1
+outcomes,,,,,,,,,,,,,,2026-10-04,answered,27
+outcomes,,,,,,,,,,,,,,2026-10-04,answered_no_data,1
+tiles,0,2026-09-13,2026-10-10,125,5,0.4639,8.111,0,0.0,6,0.048,90,18,,,
+tiles,1,2026-08-16,2026-09-12,83,8,0.1876,7.509,1,0.012048192771084338,5,0.060240963855421686,65,9,,,

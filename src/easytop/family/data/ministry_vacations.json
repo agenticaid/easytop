@@ -1,0 +1,5 @@
+{
+  "status": "UNVERIFIED",
+  "note": "Ministry of Education vacation ranges (inclusive, ISO dates) go here. Deliberately empty: dates must be copied from the official Ministry circular and verified by a human, never invented. Format: {\"from\": \"YYYY-MM-DD\", \"to\": \"YYYY-MM-DD\", \"name\": \"...\"}.",
+  "vacations": []
+}

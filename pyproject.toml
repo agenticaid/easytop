@@ -1,0 +1,58 @@
+[project]
+name = "easytop"
+version = "0.1.0"
+description = "Telegram parent agent over Webtop (SmartSchool)"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=0.40",
+    "cryptography>=50.0.2",
+    "httpx>=0.27",
+    "pyluach>=2.2",
+    "python-telegram-bot>=21",
+    "playwright>=1.45",
+    "websockets>=13",
+    "tzdata>=2024.1",
+]
+
+[project.optional-dependencies]
+spike = []  # kept so `uv sync --extra spike` still works; the browser libraries are main dependencies now
+dashboard = [
+    "db-dtypes>=1.7.2",
+    "google-cloud-bigquery>=3.46.1",
+    "pandas>=3.0.6",
+    "streamlit>=1.65.0",
+]
+
+[project.scripts]
+tomorrow = "easytop.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest>=8",
+    "pytest-asyncio>=0.23",
+    "ruff>=0.6",
+    "respx>=0.21",
+    "pglast>=8.4",
+    "pillow>=12.3.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/easytop"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["legacy"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501"]  # ruff format owns line length

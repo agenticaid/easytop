@@ -1,0 +1,21 @@
+{
+  "endpoint": "Menu/GetMenuCounters",
+  "method": "POST",
+  "request": {},
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "unreadMessages": 12,
+      "unreadNotifications": 38,
+      "unreadPedegogicalNotifications": 0,
+      "unreadSystemNotifications": 0,
+      "unreadPersonalNotifications": 0
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

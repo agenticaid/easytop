@@ -1,0 +1,26 @@
+{
+  "endpoint": "PupilCard/GetPupilLiteralEvaluations",
+  "method": "POST",
+  "request": {
+    "weekIndex": 0,
+    "viewType": 0,
+    "studyYear": 2027,
+    "studyYearName": "תשפ״ז",
+    "studentID": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007006",
+    "studentName": "Dana Levi",
+    "classCode": 1,
+    "periodID": 9023,
+    "periodName": "מחצית א",
+    "moduleID": 9
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": [],
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

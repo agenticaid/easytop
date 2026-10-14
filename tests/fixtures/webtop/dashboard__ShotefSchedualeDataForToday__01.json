@@ -1,0 +1,90 @@
+{
+  "endpoint": "dashboard/ShotefSchedualeDataForToday",
+  "method": "POST",
+  "request": {
+    "id": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007009"
+  },
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": {
+      "allowToViewThis": true,
+      "scheduale": [
+        {
+          "dayIndex": 5,
+          "hoursData": [
+            {
+              "hour": 0,
+              "hourName": null,
+              "scheduale": [],
+              "changes": [],
+              "events": [],
+              "exams": []
+            },
+            {
+              "hour": 1,
+              "hourName": "1       8:45 - 8:00",
+              "scheduale": [],
+              "changes": [],
+              "events": [],
+              "exams": []
+            },
+            {
+              "hour": 2,
+              "hourName": "2       9:30 - 8:45",
+              "scheduale": [],
+              "changes": [],
+              "events": [],
+              "exams": []
+            },
+            {
+              "hour": 3,
+              "hourName": "3       10:30 - 9:45",
+              "scheduale": [],
+              "changes": [],
+              "events": [],
+              "exams": []
+            },
+            {
+              "hour": 4,
+              "hourName": "4       11:15 - 10:30",
+              "scheduale": [],
+              "changes": [],
+              "events": [],
+              "exams": []
+            },
+            {
+              "hour": 5,
+              "hourName": "5       12:15 - 11:30",
+              "scheduale": [],
+              "changes": [],
+              "events": [],
+              "exams": []
+            },
+            {
+              "hour": 6,
+              "hourName": "6       13:00 - 12:15",
+              "scheduale": [],
+              "changes": [],
+              "events": [],
+              "exams": []
+            },
+            {
+              "hour": 7,
+              "hourName": "7       14:10 - 13:25",
+              "scheduale": [],
+              "changes": [],
+              "events": [],
+              "exams": []
+            }
+          ]
+        }
+      ]
+    },
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}

@@ -1,0 +1,34 @@
+{
+  "endpoint": "user/GetMultipleUsersForUser",
+  "method": "POST",
+  "request": {},
+  "status": 200,
+  "response": {
+    "status": true,
+    "data": [
+      {
+        "isTeacher": 1,
+        "institutionCode": 107000,
+        "isSchoolyAdministrator": false,
+        "isReseted": false,
+        "school_name": "School 1",
+        "studentLogin": "107001",
+        "studentId": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007002"
+      },
+      {
+        "isTeacher": 2,
+        "institutionCode": 107003,
+        "isSchoolyAdministrator": false,
+        "isReseted": false,
+        "school_name": "School 2",
+        "studentLogin": "107004",
+        "studentId": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007005"
+      }
+    ],
+    "message": null,
+    "errorId": null,
+    "errorDescription": null,
+    "errorHTML": null
+  },
+  "note": "anonymized from a real recording; review before committing"
+}
